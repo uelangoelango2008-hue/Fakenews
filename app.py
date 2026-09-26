@@ -16,7 +16,7 @@ def home():
         vector = vectorizer.transform([news])
         result = model.predict(vector)[0]
 
-        if result == 1:
+        if result == 0:
             prediction = "Real News ✅"
         else:
             prediction = "Fake News ❌"
